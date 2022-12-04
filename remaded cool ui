@@ -45,6 +45,7 @@ local function AddSetting(name, value)
 	writefile("underware.config", tostring(http:JSONEncode(parsed)))
 end
 
+
 function library:Window(options)
 	local TitleWhite = options.Name
 	if game.CoreGui:FindFirstChild("BloxburgUi") then
@@ -64,6 +65,10 @@ function library:Window(options)
 	BloxburgUi.Name = "BloxburgUi"
 	BloxburgUi.DisplayOrder = 1
 	MainUIFrame.Name = "MainUIFrame"
+	
+	function library:UnLoad()
+		BloxburgUi:Destroy()
+	end
 
 	if syn and syn.protect_gui then
 		syn.protect_gui(BloxburgUi)
