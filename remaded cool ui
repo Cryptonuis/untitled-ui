@@ -78,7 +78,7 @@ function library:Window(options)
 	MainUIFrame.BackgroundTransparency = 1.000
 	MainUIFrame.Position = UDim2.new(0.252025217, 0, 0.226720661, 0)
 	MainUIFrame.Size = UDim2.new(0, 551, 0, 480)
-	MainUIFrame.Image = "rbxassetid://11744681773"
+	MainUIFrame.Image = "rbxassetid://3570695787"
 	MainUIFrame.ImageColor3 = Color3.fromRGB(22, 22, 22)
 	MainUIFrame.ScaleType = Enum.ScaleType.Slice
 	MainUIFrame.SliceCenter = Rect.new(100, 100, 100, 100)
@@ -102,7 +102,7 @@ function library:Window(options)
 	TabsHolder.BackgroundTransparency = 1.000
 	TabsHolder.Position = UDim2.new(0, 0, 0.21, 0)
 	TabsHolder.Size = UDim2.new(0, 125, 0, 378)
-	TabsHolder.Image = "rbxassetid://11744681773"
+	TabsHolder.Image = "rbxassetid://3570695787"
 	TabsHolder.ImageColor3 = Color3.fromRGB(24, 24, 24)
 	TabsHolder.ScaleType = Enum.ScaleType.Slice
 	TabsHolder.SliceCenter = Rect.new(100, 100, 100, 100)
