@@ -1,5 +1,3 @@
--- super ugly terrible garbage code from a long time ago
-
 local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
 local Players = game:GetService("Players")
@@ -80,7 +78,7 @@ function library:Window(options)
 	MainUIFrame.BackgroundTransparency = 1.000
 	MainUIFrame.Position = UDim2.new(0.252025217, 0, 0.226720661, 0)
 	MainUIFrame.Size = UDim2.new(0, 551, 0, 480)
-	MainUIFrame.Image = "rbxassetid://3570695787"
+	MainUIFrame.Image = "rbxassetid://11744681773"
 	MainUIFrame.ImageColor3 = Color3.fromRGB(22, 22, 22)
 	MainUIFrame.ScaleType = Enum.ScaleType.Slice
 	MainUIFrame.SliceCenter = Rect.new(100, 100, 100, 100)
@@ -146,8 +144,8 @@ function library:Window(options)
 	BloxburgTitle2.Position = UDim2.new(0.08, 0, 0.135, 0)
 	BloxburgTitle2.Size = UDim2.new(0, 372, 0, 35)
 	BloxburgTitle2.Font = Enum.Font.GothamBold
-	BloxburgTitle2.Text = "Ware"
-	BloxburgTitle2.TextColor3 = Color3.fromRGB(233, 233, 233)
+	BloxburgTitle2.Text = "Hub"
+	BloxburgTitle2.TextColor3 = Color3.fromRGB(208, 121, 14)
 	BloxburgTitle2.TextSize = 15.000
 	BloxburgTitle2.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -158,8 +156,8 @@ function library:Window(options)
 	BloxburgHubTitle.Position = UDim2.new(0.075, 0, 0.1, 0)
 	BloxburgHubTitle.Size = UDim2.new(0, 372, 0, 35)
 	BloxburgHubTitle.Font = Enum.Font.GothamBold
-	BloxburgHubTitle.Text = "Under"
-	BloxburgHubTitle.TextColor3 = Color3.fromRGB(224, 140, 23)
+	BloxburgHubTitle.Text = "Nest"
+	BloxburgHubTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	BloxburgHubTitle.TextSize = 15.000
 	BloxburgHubTitle.TextXAlignment = Enum.TextXAlignment.Left
 	UIListLayout.Parent = TabsHolder
@@ -579,14 +577,14 @@ function library:Window(options)
 		TabTOpFrame.Name = "TabTOpFrame"
 		TabTOpFrame.Parent = TabSelected
 		TabTOpFrame.BackgroundColor3 = Color3.fromRGB(224, 139, 21)
-		TabTOpFrame.BorderColor3 = Color3.fromRGB(84, 116, 224)
+		TabTOpFrame.BorderColor3 = Color3.fromRGB(224, 161, 0)
 		TabTOpFrame.BorderSizePixel = 0
 		TabTOpFrame.Size = UDim2.new(0, 125, 0, 1)
 		TabTOpFrame.BackgroundTransparency = 1
 		TabBottomFrame.Name = "TabBottomFrame"
 		TabBottomFrame.Parent = TabSelected
 		TabBottomFrame.BackgroundColor3 = Color3.fromRGB(224, 153, 38)
-		TabBottomFrame.BorderColor3 = Color3.fromRGB(84, 116, 224)
+		TabBottomFrame.BorderColor3 = Color3.fromRGB(224, 161, 0)
 		TabBottomFrame.BorderSizePixel = 0
 		TabBottomFrame.Position = UDim2.new(0, 0, 0.966666639, 0)
 		TabBottomFrame.Size = UDim2.new(0, 125, 0, 1)
@@ -841,11 +839,11 @@ function library:Window(options)
 				SliderBarBack.SliceScale = 0.050
 				Sliderhandle.Name = "Sliderhandle"
 				Sliderhandle.Parent = SliderBarBack
-				Sliderhandle.BackgroundColor3 = Color3.fromRGB(84, 116, 224)
+				Sliderhandle.BackgroundColor3 = Color3.fromRGB(224, 161, 0)
 				Sliderhandle.BackgroundTransparency = 1.000
 				Sliderhandle.Size = UDim2.new(0, 0, 0, 6)
 				Sliderhandle.Image = "rbxassetid://3570695787"
-				Sliderhandle.ImageColor3 = Color3.fromRGB(84, 116, 224)
+				Sliderhandle.ImageColor3 = Color3.fromRGB(224, 161, 0)
 				Sliderhandle.ScaleType = Enum.ScaleType.Slice
 				Sliderhandle.SliceCenter = Rect.new(100, 100, 100, 100)
 				Sliderhandle.SliceScale = 0.050
@@ -970,7 +968,7 @@ function library:Window(options)
 								Size = UDim2.new(0, math.clamp(Mouse.X - Sliderhandle.AbsolutePosition.X, 0, 380), 0, 6)
 							}, 0.1)
 							tweenObject(Sliderhandle, {
-								ImageColor3 = Color3.fromRGB(84, 116, 224)
+								ImageColor3 = Color3.fromRGB(224, 161, 0)
 							}, 0.2)
 							connections.MoveConnection:Disconnect()
 							connections.ReleaseConnection:Disconnect()
@@ -1176,7 +1174,7 @@ function library:Window(options)
 					if activeButton == nil then
 						if not default or default == v then
 							activeButton = OptionDeselected
-							OptionDeselected.TextColor3 = Color3.fromRGB(84, 116, 224)
+							OptionDeselected.TextColor3 = Color3.fromRGB(224, 161, 0)
 							if callback then
 								callback(v)
 							end
@@ -1192,7 +1190,7 @@ function library:Window(options)
 							}, 0.2)
 						end
 						tweenObject(OptionDeselected, {
-							TextColor3 = Color3.fromRGB(84, 116, 224)
+							TextColor3 = Color3.fromRGB(224, 161, 0)
 						}, 0.2)
 						activeButton = OptionDeselected
 						if callback then
@@ -1214,7 +1212,7 @@ function library:Window(options)
 								}, 0.2)
 							end
 							tweenObject(v, {
-								TextColor3 = Color3.fromRGB(84, 116, 224)
+								TextColor3 = Color3.fromRGB(224, 161, 0)
 							}, 0.2)
 							activeButton = v
 							if callback then
@@ -1276,7 +1274,7 @@ function library:Window(options)
 				ToggleIndicator.Position = UDim2.new(0.933396459, 0, 0.161290318, 0)
 				ToggleIndicator.Size = UDim2.new(0, 20, 0, 20)
 				ToggleIndicator.Image = "rbxassetid://3570695787"
-				ToggleIndicator.ImageColor3 = not default and Color3.fromRGB(0, 0, 0) or Color3.fromRGB(84, 116, 224)
+				ToggleIndicator.ImageColor3 = not default and Color3.fromRGB(0, 0, 0) or Color3.fromRGB(224, 161, 0)
 				ToggleIndicator.ScaleType = Enum.ScaleType.Slice
 				ToggleIndicator.SliceCenter = Rect.new(100, 100, 100, 100)
 				ToggleIndicator.SliceScale = 0.050
@@ -1295,7 +1293,7 @@ function library:Window(options)
 
 				ToggleBackButton.MouseButton1Click:Connect(function()--better color pls
 
-					if ToggleIndicator.ImageColor3 == Color3.fromRGB(84, 116, 224) then
+					if ToggleIndicator.ImageColor3 == Color3.fromRGB(224, 161, 0) then
 						tweenObject(ToggleIndicator, {
 							ImageColor3 = Color3.fromRGB(0, 0, 0)
 						}, 0.1)
@@ -1304,7 +1302,7 @@ function library:Window(options)
 						end
 					elseif ToggleIndicator.ImageColor3 == Color3.fromRGB(0, 0, 0) then
 						tweenObject(ToggleIndicator, {
-							ImageColor3 = Color3.fromRGB(84, 116, 224)
+							ImageColor3 = Color3.fromRGB(224, 161, 0)
 						}, 0.1)
 						if callback then
 							callback(true)
@@ -1315,7 +1313,7 @@ function library:Window(options)
 				local toggle = {}
 
 				function toggle:Update(bool)
-					if ToggleIndicator.ImageColor3 == Color3.fromRGB(84, 116, 224) and bool == false then
+					if ToggleIndicator.ImageColor3 == Color3.fromRGB(224, 161, 0) and bool == false then
 						tweenObject(ToggleIndicator, {
 							ImageColor3 = Color3.fromRGB(0, 0, 0)
 						}, 0.1)
@@ -1324,7 +1322,7 @@ function library:Window(options)
 						end
 					elseif ToggleIndicator.ImageColor3 == Color3.fromRGB(0, 0, 0) and bool == true then
 						tweenObject(ToggleIndicator, {
-							ImageColor3 = Color3.fromRGB(84, 116, 224)
+							ImageColor3 = Color3.fromRGB(224, 161, 0)
 						}, 0.1)
 						if callback then
 							callback(true)
@@ -2032,7 +2030,8 @@ function library:Window(options)
 				Title.TextSize = 13.000
 				Title.ZIndex = -4
 				Frame.Parent = SearchBoxBack
-				Frame.BackgroundColor3 = Color3.fromRGB(84, 116, 224)
+				Frame.BackgroundColor3 = Color3.fromRGB(224, 161, 0)
+				--224, 161, 0
 				Frame.BorderSizePixel = 0
 				Frame.Position = UDim2.new(0, 0, 0, 31)
 				Frame.Size = UDim2.new(0, 210, 0, 1)
