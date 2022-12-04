@@ -95,7 +95,7 @@ function library:Window(options)
 	Cool.Position = UDim2.new(0.065, 0, 0.005, 0)
 	Cool.Size = UDim2.new(0, 55, 0, 55)
 	Cool.ZIndex = 2
-	Cool.Image = "rbxassetid://11744681773"
+	Cool.Image = "rbxassetid://11745321240"
 	BloxburgCool.Name = "BloxburgCool"
 	BloxburgCool.Parent = MainUIFrame
 	BloxburgCool.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
