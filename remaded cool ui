@@ -104,7 +104,7 @@ function library:Window(options)
 	TabsHolder.BackgroundTransparency = 1.000
 	TabsHolder.Position = UDim2.new(0, 0, 0.21, 0)
 	TabsHolder.Size = UDim2.new(0, 125, 0, 378)
-	TabsHolder.Image = "rbxassetid://3570695787"
+	TabsHolder.Image = "rbxassetid://11744681773"
 	TabsHolder.ImageColor3 = Color3.fromRGB(24, 24, 24)
 	TabsHolder.ScaleType = Enum.ScaleType.Slice
 	TabsHolder.SliceCenter = Rect.new(100, 100, 100, 100)
