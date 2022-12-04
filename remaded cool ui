@@ -578,14 +578,14 @@ function library:Window(options)
 		TabSelected.TextSize = 13.000
 		TabTOpFrame.Name = "TabTOpFrame"
 		TabTOpFrame.Parent = TabSelected
-		TabTOpFrame.BackgroundColor3 = Color3.fromRGB(84, 116, 224)
+		TabTOpFrame.BackgroundColor3 = Color3.fromRGB(224, 139, 21)
 		TabTOpFrame.BorderColor3 = Color3.fromRGB(84, 116, 224)
 		TabTOpFrame.BorderSizePixel = 0
 		TabTOpFrame.Size = UDim2.new(0, 125, 0, 1)
 		TabTOpFrame.BackgroundTransparency = 1
 		TabBottomFrame.Name = "TabBottomFrame"
 		TabBottomFrame.Parent = TabSelected
-		TabBottomFrame.BackgroundColor3 = Color3.fromRGB(84, 116, 224)
+		TabBottomFrame.BackgroundColor3 = Color3.fromRGB(224, 153, 38)
 		TabBottomFrame.BorderColor3 = Color3.fromRGB(84, 116, 224)
 		TabBottomFrame.BorderSizePixel = 0
 		TabBottomFrame.Position = UDim2.new(0, 0, 0.966666639, 0)
@@ -615,7 +615,7 @@ function library:Window(options)
 				BackgroundColor3 = Color3.fromRGB(17, 17, 30)
 			}, 0.5)
 			tweenObject(TabSelected, {
-				TextColor3 = Color3.fromRGB(84, 116, 224)
+				TextColor3 = Color3.fromRGB(224, 146, 20)
 			}, 0.5)
 			activeTab = TabSelected
 			tweenObject(TabBottomFrame, {
@@ -646,7 +646,7 @@ function library:Window(options)
 				BackgroundColor3 = Color3.fromRGB(17, 17, 30)
 			}, 0.5)
 			tweenObject(TabSelected, {
-				TextColor3 = Color3.fromRGB(84, 116, 224)
+				TextColor3 = Color3.fromRGB(224, 130, 22)
 			}, 0.5)
 			tweenObject(TabBottomFrame, {
 				BackgroundTransparency = 0
