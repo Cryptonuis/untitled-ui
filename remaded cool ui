@@ -6,7 +6,7 @@ local Mouse = Player:GetMouse()
 local TextService = game:GetService("TextService")
 local library = {flags = {}}
 
-local c = Color3.new(0.54902, 0.0941176, 1)
+local c = Color3.fromRGB(4, 119, 220)
 
 
 local function tweenObject(object, data, time)
@@ -624,7 +624,7 @@ function library:Window(options)
 				BackgroundColor3 = Color3.fromRGB(17, 17, 30)
 			}, 0.5)
 			tweenObject(TabSelected, {
-				TextColor3 = Color3.fromRGB(224, 146, 20)
+				TextColor3 = c
 			}, 0.5)
 			activeTab = TabSelected
 			tweenObject(TabBottomFrame, {
@@ -655,7 +655,7 @@ function library:Window(options)
 				BackgroundColor3 = Color3.fromRGB(17, 17, 30)
 			}, 0.5)
 			tweenObject(TabSelected, {
-				TextColor3 = Color3.fromRGB(224, 130, 22)
+				TextColor3 = c
 			}, 0.5)
 			tweenObject(TabBottomFrame, {
 				BackgroundTransparency = 0
