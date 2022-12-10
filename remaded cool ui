@@ -156,7 +156,7 @@ function library:Window(options)
 	BloxburgTitle2.Size = UDim2.new(0, 372, 0, 35)
 	BloxburgTitle2.Font = Enum.Font.GothamBold
 	BloxburgTitle2.Text = "Hub"
-	BloxburgTitle2.TextColor3 = Color3.fromRGB(208, 121, 14)
+	BloxburgTitle2.TextColor3 = c
 	BloxburgTitle2.TextSize = 15.000
 	BloxburgTitle2.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -594,7 +594,7 @@ function library:Window(options)
 		TabTOpFrame.BackgroundTransparency = 1
 		TabBottomFrame.Name = "TabBottomFrame"
 		TabBottomFrame.Parent = TabSelected
-		TabBottomFrame.BackgroundColor3 = Color3.fromRGB(224, 153, 38)
+		TabBottomFrame.BackgroundColor3 = c
 		TabBottomFrame.BorderColor3 = c
 		TabBottomFrame.BorderSizePixel = 0
 		TabBottomFrame.Position = UDim2.new(0, 0, 0.966666639, 0)
