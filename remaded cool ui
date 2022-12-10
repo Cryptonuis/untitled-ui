@@ -6,7 +6,7 @@ local Mouse = Player:GetMouse()
 local TextService = game:GetService("TextService")
 local library = {flags = {}}
 
-
+local c = Color3.new(0.54902, 0.0941176, 1)
 
 
 local function tweenObject(object, data, time)
@@ -52,9 +52,7 @@ local function AddSetting(name, value)
 end
 
 
-
 function library:Window(options)
-	local maincolor = options.Color
 	local TitleWhite = options.Name
 	if game.CoreGui:FindFirstChild("BloxburgUi") then
 		game.CoreGui:FindFirstChild("BloxburgUi"):Destroy()
@@ -589,15 +587,15 @@ function library:Window(options)
 		TabSelected.TextSize = 13.000
 		TabTOpFrame.Name = "TabTOpFrame"
 		TabTOpFrame.Parent = TabSelected
-		TabTOpFrame.BackgroundColor3 = Color3.new(maincolor)
-		TabTOpFrame.BorderColor3 = Color3.new(maincolor)
+		TabTOpFrame.BackgroundColor3 = c
+		TabTOpFrame.BorderColor3 = c
 		TabTOpFrame.BorderSizePixel = 0
 		TabTOpFrame.Size = UDim2.new(0, 125, 0, 1)
 		TabTOpFrame.BackgroundTransparency = 1
 		TabBottomFrame.Name = "TabBottomFrame"
 		TabBottomFrame.Parent = TabSelected
 		TabBottomFrame.BackgroundColor3 = Color3.fromRGB(224, 153, 38)
-		TabBottomFrame.BorderColor3 = Color3.new(maincolor)
+		TabBottomFrame.BorderColor3 = c
 		TabBottomFrame.BorderSizePixel = 0
 		TabBottomFrame.Position = UDim2.new(0, 0, 0.966666639, 0)
 		TabBottomFrame.Size = UDim2.new(0, 125, 0, 1)
@@ -852,11 +850,11 @@ function library:Window(options)
 				SliderBarBack.SliceScale = 0.050
 				Sliderhandle.Name = "Sliderhandle"
 				Sliderhandle.Parent = SliderBarBack
-				Sliderhandle.BackgroundColor3 = Color3.new(maincolor)
+				Sliderhandle.BackgroundColor3 = c
 				Sliderhandle.BackgroundTransparency = 1.000
 				Sliderhandle.Size = UDim2.new(0, 0, 0, 6)
 				Sliderhandle.Image = "rbxassetid://3570695787"
-				Sliderhandle.ImageColor3 = Color3.new(maincolor)
+				Sliderhandle.ImageColor3 = c
 				Sliderhandle.ScaleType = Enum.ScaleType.Slice
 				Sliderhandle.SliceCenter = Rect.new(100, 100, 100, 100)
 				Sliderhandle.SliceScale = 0.050
@@ -981,7 +979,7 @@ function library:Window(options)
 								Size = UDim2.new(0, math.clamp(Mouse.X - Sliderhandle.AbsolutePosition.X, 0, 380), 0, 6)
 							}, 0.1)
 							tweenObject(Sliderhandle, {
-								ImageColor3 = Color3.new(maincolor)
+								ImageColor3 = c
 							}, 0.2)
 							connections.MoveConnection:Disconnect()
 							connections.ReleaseConnection:Disconnect()
@@ -1187,7 +1185,7 @@ function library:Window(options)
 					if activeButton == nil then
 						if not default or default == v then
 							activeButton = OptionDeselected
-							OptionDeselected.TextColor3 = Color3.new(maincolor)
+							OptionDeselected.TextColor3 = c
 							if callback then
 								callback(v)
 							end
@@ -1203,7 +1201,7 @@ function library:Window(options)
 							}, 0.2)
 						end
 						tweenObject(OptionDeselected, {
-							TextColor3 = Color3.new(maincolor)
+							TextColor3 = c
 						}, 0.2)
 						activeButton = OptionDeselected
 						if callback then
@@ -1225,7 +1223,7 @@ function library:Window(options)
 								}, 0.2)
 							end
 							tweenObject(v, {
-								TextColor3 = Color3.new(maincolor)
+								TextColor3 = c
 							}, 0.2)
 							activeButton = v
 							if callback then
@@ -1287,7 +1285,7 @@ function library:Window(options)
 				ToggleIndicator.Position = UDim2.new(0.933396459, 0, 0.161290318, 0)
 				ToggleIndicator.Size = UDim2.new(0, 20, 0, 20)
 				ToggleIndicator.Image = "rbxassetid://3570695787"
-				ToggleIndicator.ImageColor3 = not default and Color3.fromRGB(0, 0, 0) or Color3.new(maincolor)
+				ToggleIndicator.ImageColor3 = not default and Color3.fromRGB(0, 0, 0) or c
 				ToggleIndicator.ScaleType = Enum.ScaleType.Slice
 				ToggleIndicator.SliceCenter = Rect.new(100, 100, 100, 100)
 				ToggleIndicator.SliceScale = 0.050
@@ -1306,7 +1304,7 @@ function library:Window(options)
 
 				ToggleBackButton.MouseButton1Click:Connect(function()--better color pls
 
-					if ToggleIndicator.ImageColor3 == Color3.new(maincolor) then
+					if ToggleIndicator.ImageColor3 == c then
 						tweenObject(ToggleIndicator, {
 							ImageColor3 = Color3.fromRGB(0, 0, 0)
 						}, 0.1)
@@ -1315,7 +1313,7 @@ function library:Window(options)
 						end
 					elseif ToggleIndicator.ImageColor3 == Color3.fromRGB(0, 0, 0) then
 						tweenObject(ToggleIndicator, {
-							ImageColor3 = Color3.new(maincolor)
+							ImageColor3 = c
 						}, 0.1)
 						if callback then
 							callback(true)
@@ -1326,7 +1324,7 @@ function library:Window(options)
 				local toggle = {}
 
 				function toggle:Update(bool)
-					if ToggleIndicator.ImageColor3 == Color3.new(maincolor) and bool == false then
+					if ToggleIndicator.ImageColor3 == c and bool == false then
 						tweenObject(ToggleIndicator, {
 							ImageColor3 = Color3.fromRGB(0, 0, 0)
 						}, 0.1)
@@ -1335,7 +1333,7 @@ function library:Window(options)
 						end
 					elseif ToggleIndicator.ImageColor3 == Color3.fromRGB(0, 0, 0) and bool == true then
 						tweenObject(ToggleIndicator, {
-							ImageColor3 = Color3.new(maincolor)
+							ImageColor3 = c
 						}, 0.1)
 						if callback then
 							callback(true)
@@ -2043,7 +2041,7 @@ function library:Window(options)
 				Title.TextSize = 13.000
 				Title.ZIndex = -4
 				Frame.Parent = SearchBoxBack
-				Frame.BackgroundColor3 = Color3.new(maincolor)
+				Frame.BackgroundColor3 = c
 				--224, 161, 0
 				Frame.BorderSizePixel = 0
 				Frame.Position = UDim2.new(0, 0, 0, 31)
